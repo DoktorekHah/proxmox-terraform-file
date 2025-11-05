@@ -1,0 +1,16 @@
+# Checkov configuration file for security scanning
+framework: terraform
+output: cli
+quiet: false
+soft-fail: false
+
+# Skip specific checks if needed
+skip-check:
+  # Example: Skip check for resource naming convention
+  # - CKV_TF_1
+
+# Enable compact output
+compact: false
+
+# Skip download of external modules
+skip-download: true
